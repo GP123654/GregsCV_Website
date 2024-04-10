@@ -1,0 +1,246 @@
+﻿@page
+@model GregsCV_Website.Pages.Web1DescriptionModel
+@{
+    ViewData["Title"] = "Web Dev 1";
+    Layout = "~/Pages/Shared/_LayoutOtherPages.cshtml";
+}
+
+
+
+<!-- Header Area -->
+<div>
+    <div class="web1-header">
+        <h2 class="header-text">Web Development Project 1</h2>
+    </div>
+</div>
+
+
+
+<section2 class="project-overview">
+
+    <div class="project-overview-content">
+
+        <h2 style="text-align:center;" class="heading">Contents of <span>page</span></h2>
+        <p1>
+            Use the cards below to jump to different sections of the page.
+        </p1>
+
+    </div>
+
+</section2>
+
+
+
+<!-- Information cards -->
+
+<div style="margin-top: 40px">
+    <div class="container">
+        <div class="box">
+            <h2 class="name">Project Overview</h2>
+            <a href="#project-overview" class="info">Go to Section to Learn More</a>
+            <div class="circle"></div>
+            <img src="/images/Project Overview 2.jpg" class="product" />
+        </div>
+
+        <div class="box">
+            <h2 class="name">Technologies Used</h2>
+            <a href="#tech-used" class="info">Go to Section to Learn More</a>
+            <div class="circle"></div>
+            <img src="/images/Technologies.jpg" class="product" />
+        </div>
+
+        <div class="box">
+            <h2 class="name">Conclusion/Downloads</h2>
+            <a href="#con-down" class="info">Go to Section to Learn More</a>
+            <div class="circle"></div>
+            <img src="/images/Conclusion.jpg" class="product" />
+        </div>
+    </div>
+</div>
+
+
+<!-- Page break image -->
+
+<div style="margin-top:160px;">
+    <div class="web1-header2">
+        
+    </div>
+</div>
+
+
+<!-- About section -->
+
+<section class="project-overview" id="project-overview">
+
+    <div class="project-overview-content">
+
+        <h1 style="text-align:center; font-size:4.5rem; margin-bottom:50px;">Project <span>overview</span></h1>
+
+        <h2 class="heading">What I had <span>to do</span></h2><!--Description of project-->
+        <p>
+            For this project I had to create a website in visual studio as well as a database in Microsoft SQL Server Management Studio.
+            I had to create an entity relationship diagram for the database as well. Then we had to add functionallity
+            to the web application that allowed a user to retrieve, edit, create and delete data from the database. 
+            We had to display the data in tables.
+        </p>
+
+        <h2 class="heading">What I <span>did</span></h2>
+        <p>
+            I made the ERD using Microsoft Visio. The project in visual studio was an ASP .NET framework web application.
+            <br /><br />
+            I also made the logo using blender just for fun and to give my application a branding.
+        </p>
+
+        <h2 class="heading">Potential problems and <span>errors</span></h2>
+        <p>
+            These are a few problems that might occur:
+            <ol style="font-size:1.4rem; margin-right:20px;">
+                <li>This project is web based but the website is not published so you have to run it from Visual Studio. </li>
+                <li>There are databases used but it is not hosted anywhere which means that there are local databases.</li>
+                <li>I did not know how to make the connection string relative so it might give a few
+                    problems but pages that do not use the database should work.
+                </li>
+                <li>These pages include all the user account pages and non user pages. The login page works because it was 
+                    hard coded you must just click the login button not press enter. Most of the admin pages will not work.</li>
+            </ol>
+            
+        </p>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<div class="tech-container" id="tech-used">
+
+    <div style="text-align:center; color:white; top:5%; font-size:30px;">
+        <h1>These are some of the things I used:</h1>
+    </div>
+    
+
+    <!-- Might only need one but can leave like this for now otherwise can just put them all in one list -->
+    <ul class="technologies-used">
+        <li><i class='bx bxl-blender'></i></li>
+        <li><i class='bx bxl-visual-studio'></i></li>     
+        <li><i class='bx bxl-youtube'></i></li>
+        <li><i class='bx bxl-html5'></i></li>
+        <li><i class='bx bxl-stack-overflow'></i></li>
+        <li><i class='bx bxl-javascript'></i></li>
+        <li><i class='bx bxl-css3'></i></li>
+        <li><i class='bx bxl-microsoft-teams'></i></li>
+    </ul>
+
+
+</div> <!--#1c004d  #34008f  #9e66ff  #be99ff  #dfccff-->
+
+
+
+
+
+
+<section2>
+    @*<div class="body3">*@
+    <div class="main-scroll-div">
+        <div>
+            <button class="icon" onclick="scrollL()"><i class='bx bx-chevrons-left'></i></button>
+        </div>
+        <div class="cover">
+            <div class="scroll-images">
+                <div class="child"><img class="child-img" src="~/images/DomRoofLogo.ico" alt="code" /></div>
+                <div class="child"><img class="child-img" src="~/images/DomRoof3.PNG" alt="code" /></div>
+                <div class="child"><img class="child-img" src="~/images/DomRoofCode2.PNG" alt="code" /></div>
+                <div class="child"><img class="child-img" src="~/images/DomRoof4.PNG" alt="code" /></div>
+                <div class="child"><img class="child-img" src="~/images/DomRoofCode1.PNG" alt="code" /></div>                
+                <div class="child"><img class="child-img" src="~/images/TableMountain2.jpg" alt="code" /></div>
+            </div>
+        </div>
+        <div>
+            <button class="icon" onclick="scrollR()"><i class='bx bx-chevrons-right'></i></button>
+        </div>
+    </div>
+    @*</div>*@
+</section2>
+
+
+
+
+@*
+<section>
+
+    <div class="image-scroller">
+        <h2 class="heading">Images of the <span>Project</span></h2>
+
+        <div class="image-wrapper">
+
+            <div class="image-box mySwiper">
+
+                <div class="image-content swiper-wrapper">
+
+                    <div class="image-slide swiper-slide">
+                        <img src="~/images/TableMountain2.jpg" alt="code" />
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>*@
+
+
+
+
+
+
+
+
+<section2 class="project-overview" id="con-down">
+
+    <div class="project-overview-content">
+
+        <h2 style="text-align:center;" class="heading">Conclusion and <span>downloads</span></h2>
+        <p1>
+            Thank you for your interest in this project and learning more about it. 
+            If this project is something you would be interested in seeing please click on the button within the card below.
+            Then you will be taken to a google drive where you can download the source code.
+        </p1>
+
+
+    </div>
+
+</section2>
+
+
+
+<div style="margin-top: 30px; margin-bottom: 100px;">
+    <div class="container2">
+
+        <div class="card">
+            <div class="front">
+                <img src="~/images/DomRoofLogo.ico" />
+            </div>
+            <div class="back">
+                <h2 class="name2">Download this web development project</h2>
+                <a href="#" class="btn2">Download</a>
+            </div>          
+        </div>
+
+    </div>
+</div>
+
+
+
+
+

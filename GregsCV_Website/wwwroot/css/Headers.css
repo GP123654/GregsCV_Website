@@ -1,0 +1,232 @@
+﻿/********************************/
+/* Page Headers */
+
+.web1-header {
+    width: 100%;
+    height: 350px; /*was 400*/
+    position: relative;
+    top: 0;
+    background-image: url("/Images/DomRoof1.PNG");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.web1-header2 {
+    width: 100%;
+    height: 350px; /*was 400*/
+    position: relative;
+    top: 0;
+    background-image: url("/images/DomRoof2.PNG");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+.web2-header {
+    width: 100%;
+    height: 350px; /*was 400*/
+    position: relative;
+    top: 0;
+    background-image: url("/Images/DomRoof1.PNG");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.web2-header2 {
+    width: 100%;
+    height: 350px; /*was 400*/
+    position: relative;
+    top: 0;
+    background-image: url('/images/DomRoof2.PNG');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
+.FinalYearP-header {
+    width: 100%;
+    height: 350px; /*was 400*/
+    position: relative;
+    top: 0;
+    background-image: url("/Images/Supernova Logo.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.FinalYearP-header2 {
+    width: 100%;
+    height: 350px; /*was 400*/
+    position: relative;
+    top: 0;
+    background-image: url('/images/hub_homeless_puturn_logo.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.Game1-header {
+    width: 100%;
+    height: 350px; /*was 400*/
+    position: relative;
+    top: 0;
+    background-image: url("/images/MeleeGame1.PNG");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.Game1-header2 {
+    width: 100%;
+    height: 350px; /*was 400*/
+    position: relative;
+    top: 0;
+    background-image: url('/images/TableMountain2.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.Mobile1-header {
+    width: 100%;
+    height: 350px; /*was 400*/
+    position: relative;
+    top: 0;
+    background-image: url("/Images/TableMountain2.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.Mobile1-header2 {
+    width: 100%;
+    height: 350px; /*was 400*/
+    position: relative;
+    top: 0;
+    background-image: url('/images/TableMountain2.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.Fullstack1-header {
+    width: 100%;
+    height: 350px; /*was 400*/
+    position: relative;
+    top: 0;
+    background-image: url("/Images/TableMountain2.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.Fullstack1-header2 {
+    width: 100%;
+    height: 350px; /*was 400*/
+    position: relative;
+    top: 0;
+    background-image: url('/images/TableMountain2.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+.achievements-header {
+    width: 100%;
+    height: 350px; /*was 400*/
+    position: relative;
+    top: 0;
+    background-image: url("/Images/Achievement Placeholder.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
+/* Text Inside Header */
+.header-text {
+    text-align: center;
+    padding-top: 125px; /*was 150*/
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+
+.FinalYearP-header-text {
+    text-align: center;
+    padding-top: 260px; /*was 150*/
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+
+@media (max-width: 800px) {
+
+    .header-text {
+        padding-top: 110px; /*was 150*/
+        font-size: 7rem;
+    }
+
+    .FinalYearP-header-text {
+        font-size: 7rem;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .FinalYearP-header-text {
+        padding-top: 250px;
+        font-size: 5.5rem;
+    }
+}
+
+
+
+
+
+
+
+/******* ALTERNATIVE WAY JUST NOT AS GOOD ********/
+
+/*.container4 {
+    position: relative;
+    text-align: center;
+    color: white;    
+    top: 0;
+}
+
+    .container4 img {
+        width: 100%;
+        height: 350px;*/ /*was 400*/
+/*position: relative;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+    }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    text-transform: uppercase;
+    color: var(--white-color);
+}*/
+

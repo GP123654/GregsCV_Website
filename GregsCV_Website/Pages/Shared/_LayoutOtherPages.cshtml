@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gregs Website - @ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/GregsCV_Website.styles.css" asp-append-version="true" />
+
+
+    <link rel="stylesheet" href="css/OtherPages.css">
+    <link href="~/css/footer.css" rel="stylesheet" />
+    <link href="~/css/headers.css" rel="stylesheet" />
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Ion Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</head>
+<body>
+
+    <style>
+        body::-webkit-scrollbar {
+            width: 0.4rem;
+        }
+
+        /* Scroll bar track */
+        body::-webkit-scrollbar-track {
+            background: #1a1a1a; /*#121212*/
+        }
+
+        /* Scroll bar movable thing / thumb */
+        body::-webkit-scrollbar-thumb {
+            background: #754ef9;
+            border-radius: 10px;
+        }
+    </style>
+
+
+
+    <!-- Header Design -->
+
+    <header class="header">
+
+        <a asp-page="Index" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a style="--i:8" asp-page="Index" class="active">Home</a>
+        </nav>
+
+        <div class="toggle">
+            <i class="bx bx-moon toggle-icon" id="darkMode-icon"></i>
+            <i class='bx bx-menu' id="menu-icon"></i>
+        </div>
+
+
+    </header>
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+
+    <!-- Footer section -->
+
+
+    <footer>
+
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+
+
+        <ul class="social-icon">
+            <li><a target="_blank" href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a target="_blank" href="https://github.com/GP123654" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li><a target="_blank" href="mailto:greg.postings97@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/gregory-postings-0a6540267" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        </ul>
+
+
+        <ul class="contact-info">
+            <li><a asp-page="Web1Description">Web 1</a></li>
+            <li><a asp-page="Web2Description">Web 2</a></li>
+            <li><a asp-page="Mobile1Description">Mobile 1</a></li>
+            <li><a asp-page="FinalYearProjectDescription">F.Y.P</a></li>
+            <li><a asp-page="FullstackDescription">Fullstack</a></li>
+            <li><a asp-page="Game1Description">Game 1</a></li>
+            
+        </ul>
+
+
+        <ul class="contact-info">
+            <li>Email Address:<a target="_blank" href="mailto:greg.postings97@gmail.com">greg.postings97@gmail.com</a></li>
+            <li>Phone Number:<a href="#">060 959 2123</a></li>
+        </ul>
+    </footer>
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!-- The Tilting of the information cards -->
+    <script src="~/js/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+            max: 25,
+            speed: 300
+        });
+    </script>
+
+    <script>
+        function scrollL() {
+            var left = document.querySelector(".scroll-images");
+            left.scrollBy(-350, 0);
+        }
+
+        function scrollR() {
+            var right = document.querySelector(".scroll-images");
+            right.scrollBy(350, 0);
+        }
+    </script>
+
+    <script src="~/js/main.js"></script>
+
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

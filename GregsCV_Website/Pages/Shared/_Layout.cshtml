@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gregs Website - @ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/GregsCV_Website.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="css/mainTheme.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+
+    <style>
+        body::-webkit-scrollbar {
+            width: 0.4rem;
+        }
+
+        /* Scroll bar track */
+        body::-webkit-scrollbar-track {
+            background: #1a1a1a; /*#121212*/
+        }
+
+        /* Scroll bar movable thing / thumb */
+        body::-webkit-scrollbar-thumb {
+            background: #754ef9;
+            border-radius: 10px;
+        }
+    </style>
+
+
+    <div>
+        @*<main role="main">*@
+            @RenderBody()
+        @*</main>*@
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script src="~/js/main.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

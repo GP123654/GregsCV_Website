@@ -1,0 +1,437 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+
+
+
+<!-- Header Design -->
+
+<header class="header">
+
+    <a href="#" class="logo">Portfolio</a>
+
+    <nav class="navbar">
+        <a style="--i:8"href="#home" class="active">Home</a>
+        <a style="--i:9"href="#about">About Me</a>
+        <a style="--i:10" href="#education">My Journey</a>
+        <a style="--i:11"href="#services">What I Can Do</a>
+        <a style="--i:12"href="#portfolio">Projects</a>
+    </nav>
+
+    <div class="toggle">
+        <i class="bx bx-moon toggle-icon" id="darkMode-icon"></i>
+        <i class='bx bx-menu' id="menu-icon"></i>
+    </div>
+     
+
+</header>
+
+
+
+<!-- Home section -->
+
+<section class="home" id="home">
+
+    <div class="home-content">
+
+        <h3>Hello, I am</h3>
+        <h1>Gregory Postings</h1>
+        <p>
+            I made this website so that you can learn more about me and what I can do.
+            I hope you enjoy the experience eventhough it might not be perfect or finished yet but I plan on improving it and finishing it.
+            Most of the information is correct just the pictures need to be changed.
+            I look forward to hearing back from you and am looking forward even more to work for you.
+        </p>
+
+        <div class="social-media">
+            <a target="_blank" href="#" style="--i:4;"><i class='bx bxl-facebook'></i></a>
+            <a target="_blank" href="https://github.com/GP123654" style="--i:5;"><i class="bx bxl-github"></i></a>
+            <a target="_blank" href="mailto:greg.postings97@gmail.com" style="--i:6;"><i class="bx bxl-gmail"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/gregory-postings-0a6540267" style="--i:7;"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+        <a href="~/documents/Greg's CV 2.0.pdf" class="btn" download>Download CV</a>
+
+    </div>
+
+    <div class="profession-container">
+
+        <div class="profession-box">
+            <div class="profession" style="--i:0;">
+                <i class="bx bx-code-alt"></i>
+                <h3>Web Developer</h3>
+            </div>
+            <div class="profession" style="--i:1;">
+                <i class="bx bx-game"></i>
+                <h3>Game Developer</h3>
+            </div>
+            <div class="profession" style="--i:2;">
+                <i class="bx bxl-android"></i>
+                <h3>Mobile Developer</h3>
+            </div>
+            <div class="profession" style="--i:3;">
+                <i class="bx bx-code-curly"></i>
+                <h3>Fullstack Developer</h3>
+            </div>
+
+            <div class="circle"></div>
+
+        </div>
+
+        <div class="overlay"></div>
+
+    </div>
+
+    @*<div class="home-img">
+        <img src="images/Profile.jpg" alt="Greg">
+    </div>*@
+
+</section>
+
+
+
+<!-- About section -->
+
+<section class="about" id="about">
+
+    <div class="about-img">
+        <img src="images/Greg CV Picture.png" alt="Jonothan" />
+    </div>
+
+    <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>I like to: <span class="multiple-text"></span></h3>
+        <p>
+            I am Gregory but you can call me Greg. I studied software and application
+            development at the IIE Varsity College. I was born in Cape Town and am still 
+            living there. I would love to stay here but I am open to moving for 3 months
+            while getting trained and to meet people I will be working with.
+            I am happy working remotely but like to see people sometimes
+            and have a different view besides my four bedroom walls.
+        </p>
+
+        <a asp-page="AboutMe" class="btn">Learn More</a>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- Education section -->
+
+<section class="education" id="education">
+
+    <h2 class="heading">My <span>Journey</span></h2>
+
+    <div class="education-row">
+        
+        <div class="education-column">
+
+            <h3 class="title">Education</h3>
+
+            <div class="education-box">
+
+
+                <div class="education-content">
+
+                    <div class="content">
+
+                        <div class="year"><i class="bx bxs-calendar"></i> 2006 - 2012</div>
+                        <h3>Kirstenhof Primary School</h3>
+                        <p>I went to Kirstenhof for seven years which was my whole primary school career.</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="education-content">
+
+                    <div class="content">
+
+                        <div class="year"><i class="bx bxs-calendar"></i> 2013 - 2017</div>
+                        <h3>Wynberg Boys High School</h3>
+                        <p>
+                           I went to Wynberg for five years which was my whole high school career.<br />
+                           I got my bachelors pass for matric.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="education-content">
+
+                    <div class="content">
+
+                        <div class="year"><i class="bx bxs-calendar"></i> 2019 - 2022</div>
+                        <h3>Bachelors Degree - IIE Varsity College</h3>
+                        <p>
+                           I went to Varsity College for four years.<br />
+                           I spent one year doing a higher certificate and three years doing a bachelors degree.
+                       </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="education-column">
+
+            <h3 class="title">Experience</h3>
+
+            <div class="education-box">
+
+
+                <div class="education-content">
+
+                    <div class="content">
+
+                        <div class="year"><i class="bx bxs-calendar"></i> 2021 - 2021</div>
+                        <h3>Revenue Red - Intern</h3>
+                        <p>
+                            I went there for two weeks during my holiday. I learned a few new things like <br />
+                            How to code an Arduino and make some basic circuits. <br />
+                            I also did some web development and database stuff.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="education-content">
+
+                    <div class="content">
+
+                        <div class="year"><i class="bx bxs-calendar"></i> 2023 - 2023</div>
+                        <h3>Revenue Red - Developer</h3>
+                        <p>
+                            I have been working there for the past three months.<br />
+                            I have been working with Microsoft SQL server management studio for writing <br />
+                            queries on a database. I have been doing some T-SQL and doing pivot tables. <br />
+                            I have also been using Blazor server for the frontend and functionality of the <br />
+                            applications. I have also been exposed to testing with JUnit, working with <br />
+                            large code bases and working in sprints.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<!-- What I Can Do section -->
+
+
+<section class="services" id="services">
+
+    <h2 class="heading">What I <span>Can Do</span></h2>
+
+    <div class="services-container">
+
+        <div class="services-box">
+            <i class='bx bx-code'></i>
+            <h3>Programming</h3>
+            <p>
+                I have experience with a few different programming languages
+                and technologies including IDEs and APIs. But I am always 
+                eager to learn new things. Please click the link below to 
+                learn more.
+
+            </p>
+
+            <a asp-page="ComingSoon" class="btn">Learn More</a>
+
+        </div>
+
+
+        <div class="services-box">
+            <i class='bx bxs-invader'></i>
+            <h3>Other</h3>
+            <p>
+                I like to do things that are not always programming related
+                but still have something to do with computers. Some were done
+                in my spare time and others for school. Please click the link 
+                below to learn more.
+            </p>
+
+            <a asp-page="ComingSoon" class="btn">Learn More</a>
+
+        </div>
+
+
+        <div class="services-box">
+            <i class='bx bx-award'></i>
+            <h3>Achievements</h3>
+            <p>
+                I have aquired a few achievements over the past few years.
+                They are in the form of university achievements as well as external
+                achievements like certifications and badges. Please click the link
+                below to learn more.
+            </p>
+
+            <a asp-page="Achievements" class="btn">Learn More</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Portfolio section -->
+
+
+<section class="portfolio" id="portfolio">
+
+    <h2 class="heading">My <span>Projects</span></h2>
+
+    <div class="portfolio-container">
+
+        <div class="portfolio-box">
+            <img src="images/Project1.jpg" alt="Project 1" />
+
+            <div class="portfolio-layer">
+                <h4>Web Dev 1</h4>
+                <p>This was my first project using Maya</p>
+                <a asp-page="Web1Description"><i class="bx bx-link-external"></i></a>
+            </div>
+
+        </div>
+
+
+        <div class="portfolio-box">
+            <img src="images/Project1.jpg" alt="Project 2" />
+
+            <div class="portfolio-layer">
+                <h4>Web Dev 2</h4>
+                <p>This was my first project using Maya</p>
+                <a asp-page="Web2Description"><i class="bx bx-link-external"></i></a>
+            </div>
+
+        </div>
+
+
+        <div class="portfolio-box">
+            <img src="images/Project1.jpg" alt="Project 3" />
+
+            <div class="portfolio-layer">
+                <h4>Mobile 1</h4>
+                <p>This is a mobile application that I did with a group of people using android studio.</p>
+                <a asp-page="Mobile1Description"><i class="bx bx-link-external"></i></a>
+            </div>
+
+        </div>
+
+
+        <div class="portfolio-box">
+            <img src="images/Project1.jpg" alt="Project 4" />
+
+            <div class="portfolio-layer">
+                <h4>Final Year Project</h4>
+                <p>This was my final year project that I did with a group of people.</p>
+                <a asp-page="FinalYearProjectDescription"><i class="bx bx-link-external"></i></a>
+            </div>
+
+        </div>
+
+
+        <div class="portfolio-box">
+            <img src="images/Project1.jpg" alt="Project 5" />
+
+            <div class="portfolio-layer">
+                <h4>Fullstack</h4>
+                <p>This is a fullstack application made in visual studio code.</p>
+                <a asp-page="FullstackDescription"><i class="bx bx-link-external"></i></a>
+            </div>
+
+        </div>
+
+
+        <div class="portfolio-box">
+            <img src="images/Project1.jpg" alt="Project 6" />
+
+            <div class="portfolio-layer">
+                <h4>Game 1</h4>
+                <p>This is a small game I made in Unreal Engine.</p>
+                <a asp-page="Game1Description"><i class="bx bx-link-external"></i></a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- Footer section -->
+
+
+<footer>
+
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+
+
+    <ul class="social-icon">
+        <li><a target="_blank" href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a target="_blank" href="https://github.com/GP123654"><ion-icon name="logo-github"></ion-icon></a></li>
+        <li><a target="_blank" href="mailto:greg.postings97@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/in/gregory-postings-0a6540267"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+    </ul>
+
+    <ul class="contact-info">
+        <li>Email Address:<a target="_blank" href="mailto:greg.postings97@gmail.com">greg.postings97@gmail.com</a></li>
+        <li>Phone Number:<a href="#">060 959 2123</a></li>
+    </ul>
+</footer>
+
+
+
+
+<!-- Ion Icon -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- scroll reveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<!-- typed -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+

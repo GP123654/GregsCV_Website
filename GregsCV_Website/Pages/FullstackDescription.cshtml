@@ -1,0 +1,207 @@
+﻿@page
+@model GregsCV_Website.Pages.FullstackDescriptionModel
+@{
+    ViewData["Title"] = "Fullstack";
+    Layout = "~/Pages/Shared/_LayoutOtherPages.cshtml";
+}
+
+
+
+<!-- Header Area -->
+
+<div>
+    <div class="Game1-header">
+        <h2 class="header-text">FullStack Project</h2>
+    </div>
+</div>
+
+
+<!-- Contents Section -->
+
+<section2 class="project-overview">
+
+    <div class="project-overview-content">
+
+        <h2 style="text-align:center;" class="heading">Contents of <span>page</span></h2>
+        <p1>
+            Use the cards below to jump to different sections of the page.
+        </p1>
+
+
+    </div>
+
+</section2>
+
+
+<!-- Information cards -->
+
+<div style="margin-top: 40px">
+    <div class="container">
+        <div class="box">
+            <h2 class="name">Project Overview</h2>
+            <a href="#project-overview" class="info">Go to Section to Learn More</a>
+            <div class="circle"></div>
+            <img src="/images/Project Overview 2.jpg" class="product" />
+        </div>
+
+        <div class="box">
+            <h2 class="name">Technologies Used</h2>
+            <a href="#tech-used" class="info">Go to Section to Learn More</a>
+            <div class="circle"></div>
+            <img src="/images/Technologies.jpg" class="product" />
+        </div>
+
+        <div class="box">
+            <h2 class="name">Conclusion/Downloads</h2>
+            <a href="#con-down" class="info">Go to Section to Learn More</a>
+            <div class="circle"></div>
+            <img src="/images/Conclusion.jpg" class="product" />
+        </div>
+    </div>
+</div>
+
+
+<!-- Page break image -->
+
+<div style="margin-top:160px;">
+    <div class="Game1-header2">
+    </div>
+</div>
+
+
+<!-- Project Overview Section -->
+
+<section class="project-overview" id="project-overview">
+
+    <div class="project-overview-content">
+
+        <h1 style="text-align:center; font-size:4.5rem; margin-bottom:50px;">Project <span>overview</span></h1>
+
+        <h2 class="heading">What I had <span>to do</span></h2><!--Description of project-->
+        <p>
+            For this project I had to had to create a fullstack web application using various new technologies to me.
+            Therefore I learned quite a lot of new things that I found quite challenging but not impossible.
+            <br /><br />
+            For this project we had to create a bulletinboard where you can create, delete and retrieve bulletingboard posts.
+        </p>
+
+        <h2 class="heading">What I <span>did</span></h2>
+        <p>
+            To create the web application I used Visual Studio Code. I then used HTML, CSS and angular for the front end and 
+            then TypeScript and NodeJs for the functionality of the application as well as MongoDB for the database. I also 
+            used Stack Overflow and youtube to help me and fix any problems I had. I then submitted my project using Microsoft Teams.
+        </p>
+
+        <h2 class="heading">Potential problems and <span>errors</span></h2>
+        <p>
+            These are a few problems that might occur:
+            <ol style="font-size:1.4rem; margin-right:20px;">
+                <li>This project is web based but the website is not published so you have to run it from Visual Studio Code.</li>
+                <li>There are databases used and they hosted but my account might have been deleted because it was a school
+                    one and I haven't used it for a while.
+                </li>
+                <li>
+                    There might be a slight certificate problem or something so you might not be able to view it but you
+                    can read the documentation for pictures and other information.
+                </li>
+            </ol>
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- Technologies Used -->
+
+<div class="tech-container" id="tech-used">
+
+    <div style="text-align:center; color:white; top:5%; font-size:30px;">
+        <h1>These are some of the things I used:</h1>
+    </div>
+
+
+    <!-- Might only need one but can leave like this for now otherwise can just put them all in one list -->
+    <ul class="technologies-used">
+        <li><i class='bx bxl-visual-studio'></i></li>
+        <li><i class='bx bxl-mongodb'></i></li>
+        <li><i class='bx bxl-typescript'></i></li>
+        <li><i class='bx bxl-youtube'></i></li>
+        <li><i class='bx bxl-angular'></i></li>
+        <li><i class='bx bxl-html5'></i></li>
+        <li><i class='bx bxl-stack-overflow'></i></li>
+        <li><i class='bx bxl-nodejs'></i></li>
+        <li><i class='bx bxl-css3'></i></li>
+        <li><i class='bx bxl-microsoft-teams'></i></li>
+    </ul>
+
+</div>
+
+
+<!-- Image Slider -->
+
+<section2>
+
+    <div class="main-scroll-div">
+        <div>
+            <button class="icon" onclick="scrollL()"><i class='bx bx-chevrons-left'></i></button>
+        </div>
+        <div class="cover">
+            <div class="scroll-images">
+                <div class="child"><img class="child-img" src="~/images/Code.jpg" alt="code" /></div>
+                <div class="child"><img class="child-img" src="~/images/TableMountain1.jpg" alt="code" /></div>
+                <div class="child"><img class="child-img" src="~/images/Project1.jpg" alt="code" /></div>
+                <div class="child"><img class="child-img" src="~/images/Profile.jpg" alt="code" /></div>
+                <div class="child"><img class="child-img" src="~/images/SocialMedia.jpg" alt="code" /></div>
+                <div class="child"><img class="child-img" src="~/images/TableMountain2.jpg" alt="code" /></div>
+            </div>
+        </div>
+        <div>
+            <button class="icon" onclick="scrollR()"><i class='bx bx-chevrons-right'></i></button>
+        </div>
+    </div>
+
+</section2>
+
+
+<!-- Conclusion And Download Section -->
+
+<section2 class="project-overview" id="con-down">
+
+    <div class="project-overview-content">
+
+        <h2 style="text-align:center;" class="heading">Conclusion and <span>downloads</span></h2>
+        <p1>
+            Thank you for your interest in this project and learning more about it.
+            If this project is something you would be interested in seeing please click on the button within the card below.
+            Then you will be taken to a google drive where you can download the source code.
+        </p1>
+
+
+    </div>
+
+</section2>
+
+
+<!-- Download Card -->
+
+<div style="margin-top: 30px; margin-bottom: 100px;">
+    <div class="container2">
+
+        <div class="card">
+            <div class="front">
+                <img src="/images/Code.jpg" />
+            </div>
+            <div class="back">
+                <h2 class="name2">Download this fullstack project</h2>
+                <a href="#" class="btn2">Download</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
